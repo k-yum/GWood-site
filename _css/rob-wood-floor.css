@@ -109,15 +109,9 @@ h1 {
 }
 
 .contact {
-<<<<<<< Updated upstream
-  background-image:url(../_images/contact.jpg);
-  background-size: contain;
-  height: 350px;
-=======
   margin-top: 100px;
   background-color: lightgoldenrodyellow;
   padding-top: 30px;
->>>>>>> Stashed changes
 }
 
 .contact h3 {
