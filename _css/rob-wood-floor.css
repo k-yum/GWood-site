@@ -51,9 +51,7 @@ h1 {
   text-align: center;
 }
 
-#refinish {
-  background-image: url(../_images/refinish.jpg);
-  background-size: 100% 100%;
+.allServices h5 {
   background-blend-mode:overlay;
   background-color: darkslategray;
   padding: 90px 80px;
@@ -63,49 +61,48 @@ h1 {
   color: white;
 }
 
-#refinish:hover {
+.allServices h5:hover {
   background-blend-mode:soft-light;
   background-color: gray;
+}
+
+#refinish {
+  background-image: url(../_images/refinish.jpg);
+  background-size: 100% 100%;
 }
 
 #installation {
   background-image: url(../_images/installation.jpeg);
   background-size: 100% 100%;
-  padding: 90px 60px;
-  font-family: sans-serif;
-  font-size: 40px;
 }
 
 #repairs {
   background-image: url(../_images/repair.jpg);
   background-size: 100% 100%;
   padding: 90px 90px;
-  font-family: sans-serif;
-  font-size: 40px;
 }
 
 #patch-recoat {
   background-image: url(../_images/recoat.jpg);
   background-size: 100% 100%;
   padding: 70px 60px;
-  font-family: sans-serif;
-  font-size: 40px;
 }
 
 #distressF {
   background-image: url(../_images/distress.jpg);
   background-size: 100% 100%;
   padding: 70px 60px;
-  font-family: sans-serif;
-  font-size: 40px;
 }
 
 #otherSer {
   background-image: url(../_images/otherServices.jpg);
   background-size: 100% 100%;
   padding: 70px 60px;
-  font-family: sans-serif;
-  font-size: 40px;
+}
+
+#gallery-h {
+  
+  text-align: center;
 }
 
 .contact {
@@ -116,28 +113,28 @@ h1 {
 
 .contact h3 {
   font-size: 3.4em;
-  color: white;
-  margin: auto;
-  margin-top: 5%;
-  text-align: center;
+
 }
 
 #logo-contact {
   width: 200px;
-  margin-top: 50px;
 }
 
 .info {
-  background-color: white;
-  opacity: 0.50;
   width: 400px;
   color: black;
-  padding: 20px 30px 8px;
   font-size: 1.3em;
+  margin-top: 10%;
+}
+
+.contact ul {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20%;
+}
+
+.contact li{
+  display: block;
+  margin-top: 20px;
+  font-size: 1.5em;
 }
 
 
@@ -239,6 +236,20 @@ h1 {
   to {opacity: 1}
 }
 
+
+/*Gallery*/
+
+#gallery-h{
+  background-image: url(../_images/contact.jpg);
+  height:100px;
+  text-align: center;
+  font-size: 4.3em;
+  margin-bottom: 80px;
+}
+
+.photo-gallery img{
+  margin-bottom: 30px;
+}
 
 
 /*Foundation*/
