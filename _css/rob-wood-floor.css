@@ -10,6 +10,19 @@ h1 {
   background-color: lightgray;
 }
 
+.intro p {
+  font-family: "Maven Pro";
+  margin-top: 20px;
+}
+
+#about-h {
+  font-family: "Economica", sans-serif;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  border: 1px solid brown;
+  text-align: center;
+}
+
 .nav ul {
   margin: 0 auto;
   border-bottom: 2px solid brown;
@@ -17,7 +30,7 @@ h1 {
   list-style: none;
   width: 100%;
   padding:10px;
-  overflow: auto;
+  overflow: auto;  
 }
 
 .nav li {
@@ -26,6 +39,37 @@ h1 {
   font-size: 18px;
   padding: 15px 28px;
   float:right;
+}
+
+.nav a {
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: brown;
+}
+
+.nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: brown;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .intro {
@@ -37,8 +81,12 @@ h1 {
 }
 
 #service-h {
-  margin-top: 60px;
+  margin-top: 100px;
   text-align: center;
+  font-family: "Economica", sans-serif;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  border: 1px solid brown;
 }
 
 .service-row1 {
@@ -100,19 +148,57 @@ h1 {
   padding: 70px 60px;
 }
 
+.description {
+  font-family: "Inconsolata";
+}
+
+#n4 {
+  margin-top: 100px;
+}
+
 #gallery-hh {
   text-align: center;
+  font-family: "Economica", sans-serif;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  border: 1px solid brown;
+}
+
+.gallery p {
+  font-family: "Maven Pro";
 }
 
 .contact {
+  margin-bottom: 100px;
+}
+.contactpic {
+  background-image: url(../_images/contact-us.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+/*.contact h2 {
+  font-size: 4em;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: white;
+}*/
+
+#contact-h {
+  font-family: "Economica", sans-serif;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  border: 1px solid brown;
+  text-align: center;
   margin-top: 100px;
-  background-color: lightgoldenrodyellow;
-  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 .contact h3 {
   font-size: 3.4em;
-
+  font-family: sans-serif;
+  
 }
 
 #logo-contact {
@@ -123,7 +209,8 @@ h1 {
   width: 400px;
   color: black;
   font-size: 1.3em;
-  margin-top: 10%;
+  margin-top: 40%;
+  font-family: "khand";
 }
 
 .contact ul {
@@ -242,6 +329,7 @@ h1 {
   background-image: url(../_images/contact.jpg);
   height:100px;
   text-align: center;
+  font-family: "lobster", sans-serif;
   font-size: 4.3em;
   margin-bottom: 80px;
 }
