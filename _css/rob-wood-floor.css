@@ -77,12 +77,9 @@ nav li a {
   -webkit-box-sizing: border-box;
 }
 
-
-
 nav a#pull {
   display: none;
 }
-
 
 @media screen and (max-width: 780px) {
   nav {
@@ -108,7 +105,6 @@ nav a#pull {
   }
 }
 
-
 @media only screen and (max-width: 780px) {
   nav {
     border-bottom: 0;
@@ -127,7 +123,6 @@ nav a#pull {
     background-color: #283744;
     width: 50px;
     position: relative;
-    
   }
   nav a#pull:after {
     content: "";
@@ -139,7 +134,7 @@ nav a#pull {
     top: 10px;
   }
   nav img {
-    width:30px;
+    width: 30px;
     height: 30px;
   }
   nav a#pull:hover {
@@ -157,6 +152,8 @@ nav a#pull {
     border-bottom: 1px solid #576979;
   }
 }
+
+
 /*.navi ul {
   margin: 0 auto;
   border-bottom: 2px solid brown;
@@ -223,16 +220,10 @@ nav a:hover:before {
   border: 1px solid brown;
 }
 
-.service-row1 {
-  margin-top: 10px;
-  text-align: center;
-}
 
-.service-row2 {
-  margin-top: 10px;
-  text-align: center;
-}
 
+
+/* Make this the hover
 .allServices h5 {
   background-blend-mode: overlay;
   background-color: darkslategray;
@@ -241,11 +232,106 @@ nav a:hover:before {
   font-size: 40px;
   font-weight: bolder;
   color: white;
-}
+}*/
 
-.allServices h5:hover {
+.trigger:hover {
   background-blend-mode: soft-light;
   background-color: gray;
+}
+
+@media screen and (min-width: 1130px) {
+  .allServices2,
+  .allServices3 {
+    display: none;
+  }
+  .allServices h2 {
+    text-shadow: -2px 1px 10px black;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    text-align: center;
+  }
+  .trigger {
+    box-sizing: border-box;
+    width: 380px;
+    height: 250px; 
+  }
+  .description {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width:1130px) {
+  .allServices,
+  .allServices3{
+    display:none 
+  }
+  .allServices2 {
+    display: block;
+  }
+  .allServices2 h2 {
+    text-shadow: -2px 1px 10px black;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    margin: auto;
+  }
+  .trigger {
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 380px;
+    height: 250px;
+  }
+  .description {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .allServices,
+  .allServices2 {
+    display: none;
+  }
+  .allServices3 {
+    display: block;
+  }
+  .allServices3 h2 {
+    text-shadow: -2px 1px 10px black;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    margin: auto;
+  }
+  .trigger {
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 380px;
+    height: 250px;
+  }
+  .description {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .trigger {
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+  }
+  .description {
+    width: 100%;
+  }
 }
 
 #refinish {
@@ -261,25 +347,25 @@ nav a:hover:before {
 #repairs {
   background-image: url(../_images/repair.jpg);
   background-size: 100% 100%;
-  padding: 90px 90px;
+}
+
+.service-row2 {
+  margin-top: 20px;
 }
 
 #patch-recoat {
   background-image: url(../_images/recoat.jpg);
   background-size: 100% 100%;
-  padding: 70px 60px;
 }
 
 #distressF {
   background-image: url(../_images/distress.jpg);
   background-size: 100% 100%;
-  padding: 70px 60px;
 }
 
 #otherSer {
   background-image: url(../_images/otherServices.jpg);
   background-size: 100% 100%;
-  padding: 70px 60px;
 }
 
 .description {
@@ -345,7 +431,7 @@ nav a:hover:before {
   width: 400px;
   color: black;
   font-size: 1.3em;
-  margin-top: 40%;
+  margin-top: 5%;
   font-family: "khand";
 }
 
