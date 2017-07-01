@@ -150,39 +150,15 @@ nav a#pull {
   }
   nav li a {
     border-bottom: 1px solid #576979;
+    border-top: 1px solid #576979;
   }
 }
-
-
-/*.navi ul {
-  margin: 0 auto;
-  border-bottom: 2px solid brown;
-  background-color: lightgray;
-  list-style: none;
-  width: 100%;
-  padding:10px;
-  overflow: auto;  
-}
-
-.navi li {
-  display: inline;
-  text-transform: uppercase;
-  font-size: 18px;
-  padding: 15px 28px;
-  float:right;
-}
-
-.navi a {
-  color: black;
-  position: relative;
-  text-decoration: none;
-}*/
 
 nav a:hover {
   color: brown;
 }
 
-nav a:before {
+/*nav a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -201,7 +177,7 @@ nav a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
+} */
 
 .intro {
   margin-top: 80px;
