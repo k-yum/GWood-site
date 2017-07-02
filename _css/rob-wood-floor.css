@@ -329,18 +329,18 @@ nav a:hover:before {
   margin-top: 20px;
 }
 
-#patch-recoat {
+#patch {
+  background-image: url(../_images/patch.jpg);
+  background-size: 100% 100%;
+}
+
+#recoat {
   background-image: url(../_images/recoat.jpg);
   background-size: 100% 100%;
 }
 
 #distressF {
   background-image: url(../_images/distress.jpg);
-  background-size: 100% 100%;
-}
-
-#otherSer {
-  background-image: url(../_images/otherServices.jpg);
   background-size: 100% 100%;
 }
 
@@ -361,6 +361,8 @@ nav a:hover:before {
 }
 
 .gallery p {
+  margin: 10% auto;
+  width:80%;
   font-family: "Maven Pro";
 }
 
