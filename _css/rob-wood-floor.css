@@ -250,6 +250,22 @@ nav a:hover:before {
   text-align: center;
 }
 
+.about2 {
+  display: none;
+}
+
+@media screen and (max-width: 1040px){
+  .about1 {
+    display: none;
+  }
+  .about2 {
+    display: block;
+  }
+  .intro {
+    margin-top: 20px;
+  }
+}
+
 #service-h {
   margin-top: 100px;
   text-align: center;
