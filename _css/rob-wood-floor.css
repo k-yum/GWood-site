@@ -187,6 +187,9 @@ nav a#pull {
     font-size: 10px;
     left: 20%;
   }
+  #logo-contact {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 780px) {
@@ -361,17 +364,17 @@ nav a:hover:before {
 }
 
 #refinish {
-  background-image: url(../_images/refinish.jpg);
+  background-image: url(../_images/refinish_l.jpg);
   background-size: 100% 100%;
 }
 
 #installation {
-  background-image: url(../_images/installation.jpeg);
+  background-image: url(../_images/installation_l.jpeg);
   background-size: 100% 100%;
 }
 
 #repairs {
-  background-image: url(../_images/repair.jpg);
+  background-image: url(../_images/repair_l.jpg);
   background-size: 100% 100%;
 }
 
@@ -380,17 +383,17 @@ nav a:hover:before {
 }
 
 #patch {
-  background-image: url(../_images/patch.jpg);
+  background-image: url(../_images/patch_l.jpg);
   background-size: 100% 100%;
 }
 
 #recoat {
-  background-image: url(../_images/recoat.jpg);
+  background-image: url(../_images/recoat_l.jpg);
   background-size: 100% 100%;
 }
 
 #distressF {
-  background-image: url(../_images/distress.jpg);
+  background-image: url(../_images/distress_l.jpg);
   background-size: 100% 100%;
 }
 
