@@ -254,18 +254,6 @@ nav a:hover:before {
   display: none;
 }
 
-@media screen and (max-width: 1040px){
-  .about1 {
-    display: none;
-  }
-  .about2 {
-    display: block;
-  }
-  .intro {
-    margin-top: 20px;
-  }
-}
-
 #service-h {
   margin-top: 100px;
   text-align: center;
@@ -275,8 +263,37 @@ nav a:hover:before {
   border: 1px solid brown;
 }
 
+#contact-h {
+  font-family: "Economica", sans-serif;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  border: 1px solid brown;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
 
-
+@media screen and (max-width: 1040px){
+  .about1 {
+    display: none;
+  }
+  .about2 {
+    display: block;
+    margin-top: 50px
+  }
+  .intro {
+    margin-top: 20px;
+  }
+  #service-h {
+    margin-top: 50px;
+  }
+  #gallery-hh {
+    margin-top: -30px;
+  }
+  #contact-h {
+    margin-top: 50px;
+  }
+}
 
 /* Make this the hover
 .allServices h5 {
@@ -475,15 +492,7 @@ nav a:hover:before {
   color: white;
 }*/
 
-#contact-h {
-  font-family: "Economica", sans-serif;
-  font-size: 2.8em;
-  text-transform: uppercase;
-  border: 1px solid brown;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 30px;
-}
+
 
 .contact h3 {
   font-size: 2.6em;
