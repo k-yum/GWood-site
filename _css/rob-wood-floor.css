@@ -14,8 +14,80 @@ img {
   src: url('../_fonts/WOODCUT.TTF'); 
 } 
 
-h1 {
-  background-color: lightgray;
+@font-face {
+  font-family: custom;
+  src: url("../_fonts/quantify bold.ttf");
+}
+
+@font-face {
+  font-family: custom2;
+  src: url("../_fonts/code light.otf");
+}
+
+@font-face {
+  font-family: custom3;
+  src: url("../_fonts/square.ttf");
+}
+
+.h-img {
+  width:100%;
+  height: 700px;
+  z-index: 2;
+}
+
+.h-img:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url('../_images/kitchen-2400367_1920.jpg');
+  opacity: .85;
+  filter:brightness(85%);
+  content: "";
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+
+.h-text {
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.h-text h1 {
+  font-family: custom;
+  font-size: 3.8em;
+  background-color: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px black;
+}
+
+.h-text button {
+  padding: 14px;
+  background-color: burlywood;
+  border: solid 1px firebrick;
+  font-family: custom2;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: firebrick;
+  transition-duration: 2s;
+}
+
+.h-text button:hover {
+  border-color: #283744;
+  color: #283744;
+  border-radius: 50%;
+  transition-duration: 2s;
 }
 
 nav h2 {
@@ -54,9 +126,10 @@ nav {
   font-size: 11pt;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
-  position: relative;
+  position: fixed;
   background-color: #283744;
   border-bottom: 2px solid brown;
+  z-index: 1;
 }
 
 nav ul {
@@ -123,11 +196,14 @@ nav a#pull {
     width: 100%;
     display: block;
     height: auto;
+    z-index: 1;
   }
   nav li {
     width: 100%;
     float: right;
     position: relative;
+    background-color: #283744;
+    z-index: 1;
   }
   nav li a {
     border-bottom: 1px solid #576979;
@@ -139,6 +215,10 @@ nav a#pull {
   }
   nav h2 {
     left: 25%;
+  }
+  .clearfix {
+
+    z-index: 1;
   }
 }
 
@@ -183,12 +263,24 @@ nav a#pull {
   nav h2 {
     font-size: 20px;
   }
+  .h-text h1 {
+    font-size: 3em;  
+  }
+  .h-text button {
+    font-size: .8em;
+  }
 }
 
 @media only screen and (max-width: 510px) {
   nav h2 {
     font-size: 17px;
     left: 20%;
+  }
+  .h-text h1 {
+    font-size: 2.49em;  
+  }
+  .h-text button {
+    font-size: .6em;
   }
 }
 
@@ -221,33 +313,16 @@ nav a:hover {
   color: brown;
 }
 
-/*nav a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 1;
-  left: 0;
-  background-color: brown;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-nav a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-} */
-
 .intro {
   margin-top: 80px;
 }
 
 .intro h3 {
   text-align: center;
+}
+
+.about1 {
+  margin-top: 50px;
 }
 
 .about2 {
@@ -455,7 +530,7 @@ nav a:hover:before {
 }
 
 #n4 {
-  margin-top: 100px;
+  height: 100px;
 }
 
 #gallery-hh {
@@ -482,17 +557,6 @@ nav a:hover:before {
   background-repeat: no-repeat;
   height: 350px;
 }
-
-
-/*.contact h2 {
-  font-size: 4em;
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  color: white;
-}*/
-
-
 
 .contact h3 {
   font-size: 2.6em;
@@ -650,19 +714,8 @@ nav a:hover:before {
 
 /*Gallery*/
 
-#gallery-h {
-  background-image: url(../_images/kitchen-2495602_1920.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  height: 93vh;
-  text-align: center;
-  font-family: "lobster", sans-serif;
-  font-size: 5.3em;
-  color: yellow;
-  margin-bottom: 80px;
-  padding-top: 40px;
-  text-shadow: 3px 3px black;
+.photo-gallery {
+  margin-top: 100px;
 }
 
 .photo-gallery img {
